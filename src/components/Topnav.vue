@@ -1,12 +1,24 @@
+<script lang="ts" setup>
+import { Ref, inject } from 'vue'
+const menuVisible = inject<Ref<boolean>>('menuVisible') // get
+const toggleMenu = ()=>{
+  console.log('xxxx')
+  console.log(menuVisible)
+  if(menuVisible) {
+    menuVisible.value = !menuVisible.value
+  }
+}
+</script>
 <template>
   <div class="topnav">
-    <div class="logo">LOGO</div>
+    <div class="logo" @click="toggleMenu">LOGO</div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .topnav {
   background: pink;
