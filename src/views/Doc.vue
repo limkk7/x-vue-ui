@@ -45,5 +45,8 @@ aside {
       padding: 4px 0;
     }
   }
+  @media (max-width: 500px) {
+    
+  }
 }
 </style> 
