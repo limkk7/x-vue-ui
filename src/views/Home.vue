@@ -8,8 +8,8 @@ import Topnav from '../components/Topnav.vue'
     <div class="banner">
       <h1>X-Ui</h1>
       <p class="actions">
-        <a href>GitHub</a>
-        <a href>开始</a>
+        <a href="https://github.com/versionlin7/x-vue-ui">GitHub</a>
+        <router-link to="/doc">开始</router-link>
       </p>
     </div>
   </div>
