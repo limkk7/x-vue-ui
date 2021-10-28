@@ -3,6 +3,8 @@ import App from './App.vue'
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
 import { createWebHashHistory, createRouter } from 'vue-router'
+import './index.scss'
+
 
 const history = createWebHashHistory()
 const router = createRouter({
