@@ -5,6 +5,6 @@ import Switch from '../lib/Switch.vue'
 </script>
 <template>
   <div>
-    <Switch :value="y" @input="y = $event" />
+    <Switch v-model:value="y"  />
   </div>
 </template>
